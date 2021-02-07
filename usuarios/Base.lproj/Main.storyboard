@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ra8-l5-rmc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r9N-9x-ffo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -130,7 +130,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="WLR-RB-lfa" id="7uM-9j-Cxp"/>
                         <outlet property="passwordTextField" destination="2NE-7s-xV8" id="igt-UG-2tQ"/>
-                        <segue destination="Mdq-Vx-ieD" kind="show" identifier="listview" id="rcG-39-q2b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AG3-cI-U3J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -331,22 +330,62 @@
             <objects>
                 <viewController id="Mdq-Vx-ieD" customClass="ListView" customModule="usuarios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7io-q3-R4P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L1Y-Ov-9wB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="pDG-gV-FId" customClass="userRow" customModule="usuarios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pDG-gV-FId" id="VTO-gH-Bat" customClass="userRow" customModule="usuarios" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kax-41-TWi">
+                                                    <rect key="frame" x="157" y="11.5" width="100" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="0wd-44-MTg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Kax-41-TWi" firstAttribute="centerY" secondItem="VTO-gH-Bat" secondAttribute="centerY" id="7Cg-7e-McZ"/>
+                                                <constraint firstItem="Kax-41-TWi" firstAttribute="centerX" secondItem="VTO-gH-Bat" secondAttribute="centerX" id="G27-4t-S2u"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nombre" destination="Kax-41-TWi" id="jfh-Be-Zo4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="e4c-eP-mJY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e4c-eP-mJY" firstAttribute="bottom" secondItem="L1Y-Ov-9wB" secondAttribute="bottom" id="9Jd-at-Njl"/>
+                            <constraint firstItem="L1Y-Ov-9wB" firstAttribute="leading" secondItem="e4c-eP-mJY" secondAttribute="leading" id="EpJ-bY-Oqc"/>
+                            <constraint firstItem="e4c-eP-mJY" firstAttribute="trailing" secondItem="L1Y-Ov-9wB" secondAttribute="trailing" id="JJw-4W-15q"/>
+                            <constraint firstItem="L1Y-Ov-9wB" firstAttribute="top" secondItem="e4c-eP-mJY" secondAttribute="top" id="YEM-eN-YzK"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="bhE-XY-gwN"/>
                     <navigationItem key="navigationItem" id="Hty-9y-a34"/>
+                    <connections>
+                        <outlet property="listView" destination="L1Y-Ov-9wB" id="68l-jz-irk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgD-WW-skO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-245" y="1112"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="rcG-39-q2b"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="113"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9B591B25D017F300FF53A9 /* userRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B591A25D017F300FF53A9 /* userRow.swift */; };
+		1D9B592025D01BD700FF53A9 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B591F25D01BD700FF53A9 /* AlertService.swift */; };
 		1DB9F8CB25CDB22B009A6ED0 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9F8CA25CDB22B009A6ED0 /* loginViewController.swift */; };
 		1DB9F8D425CDB235009A6ED0 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9F8CF25CDB234009A6ED0 /* Register.swift */; };
 		1DB9F8D625CDB235009A6ED0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9F8D125CDB235009A6ED0 /* User.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D9B591A25D017F300FF53A9 /* userRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userRow.swift; sourceTree = "<group>"; };
+		1D9B591F25D01BD700FF53A9 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		1DB9F8CA25CDB22B009A6ED0 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = "../../rutas 2/rutas/loginViewController.swift"; sourceTree = "<group>"; };
 		1DB9F8CF25CDB234009A6ED0 /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Register.swift; path = "../../rutas 2/rutas/Register.swift"; sourceTree = "<group>"; };
 		1DB9F8D125CDB235009A6ED0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../rutas 2/rutas/User.swift"; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				1DB9F8FF25CDDA1B009A6ED0 /* Request.swift */,
 				1DB9F8ED25CDD7EB009A6ED0 /* ApiRequest.swift */,
 				1DB9F8E425CDD55D009A6ED0 /* ListView.swift */,
+				1D9B591A25D017F300FF53A9 /* userRow.swift */,
+				1D9B591F25D01BD700FF53A9 /* AlertService.swift */,
 			);
 			path = usuarios;
 			sourceTree = "<group>";
@@ -279,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D9B591B25D017F300FF53A9 /* userRow.swift in Sources */,
 				1DB9F8CB25CDB22B009A6ED0 /* loginViewController.swift in Sources */,
 				1DCF4F8A25C9DB6700EB4DA8 /* ViewController.swift in Sources */,
 				1DB9F8E525CDD55D009A6ED0 /* ListView.swift in Sources */,
@@ -288,6 +295,7 @@
 				1DB9F8D625CDB235009A6ED0 /* User.swift in Sources */,
 				1DB9F90025CDDA1B009A6ED0 /* Request.swift in Sources */,
 				1DB9F8EE25CDD7EB009A6ED0 /* ApiRequest.swift in Sources */,
+				1D9B592025D01BD700FF53A9 /* AlertService.swift in Sources */,
 				1DB9F8D725CDB235009A6ED0 /* networkinServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
