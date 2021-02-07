@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2CAE5C25D06D2600FD0DCD /* PerfilControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2CAE5B25D06D2600FD0DCD /* PerfilControler.swift */; };
 		1D9B591B25D017F300FF53A9 /* userRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B591A25D017F300FF53A9 /* userRow.swift */; };
 		1D9B592025D01BD700FF53A9 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9B591F25D01BD700FF53A9 /* AlertService.swift */; };
 		1DB9F8CB25CDB22B009A6ED0 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9F8CA25CDB22B009A6ED0 /* loginViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2CAE5B25D06D2600FD0DCD /* PerfilControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilControler.swift; sourceTree = "<group>"; };
 		1D9B591A25D017F300FF53A9 /* userRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userRow.swift; sourceTree = "<group>"; };
 		1D9B591F25D01BD700FF53A9 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		1DB9F8CA25CDB22B009A6ED0 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = loginViewController.swift; path = "../../rutas 2/rutas/loginViewController.swift"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				1DB9F8E425CDD55D009A6ED0 /* ListView.swift */,
 				1D9B591A25D017F300FF53A9 /* userRow.swift */,
 				1D9B591F25D01BD700FF53A9 /* AlertService.swift */,
+				1D2CAE5B25D06D2600FD0DCD /* PerfilControler.swift */,
 			);
 			path = usuarios;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				1D9B591B25D017F300FF53A9 /* userRow.swift in Sources */,
 				1DB9F8CB25CDB22B009A6ED0 /* loginViewController.swift in Sources */,
+				1D2CAE5C25D06D2600FD0DCD /* PerfilControler.swift in Sources */,
 				1DCF4F8A25C9DB6700EB4DA8 /* ViewController.swift in Sources */,
 				1DB9F8E525CDD55D009A6ED0 /* ListView.swift in Sources */,
 				1DCF4F8625C9DB6700EB4DA8 /* AppDelegate.swift in Sources */,

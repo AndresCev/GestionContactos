@@ -1,10 +1,4 @@
-//
-//  ApiRequest.swift
-//  rutas
-//
-//  Created by alumnos on 29/01/2021.
-//  Copyright © 2021 alumnos. All rights reserved.
-//
+
 
 import Foundation
 import UIKit
@@ -103,16 +97,11 @@ class APIRequest  {
                         
                     case 200 ..< 300:
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                
-                                let vc = storyboard.instantiateViewController(identifier: "listview") as! ListView
-                                        
-                                vc.modalPresentationStyle = .overFullScreen
-                                
-                                
-                        
+                       
                         print("Sesión iniciada")
                         
-                        
+                        completion(.success(userLogin))
+
                         
                     default:
                         print("No se ha podido iniciar sesión")

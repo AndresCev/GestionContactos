@@ -25,7 +25,8 @@ class ListView: UIViewController, UITableViewDataSource, UITableViewDelegate {
                        switch result{
 
                        case.success(let lista):
-                           print("imprimiendo desde getusers")
+                        
+                           print("imprimiendo")
                         
                           self!.listas = lista
                           
@@ -60,7 +61,7 @@ class ListView: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = listView.dequeueReusableCell(withIdentifier: "cellId") as! userRow
-            print(listas[indexPath.row]+"hola")
+           
             cell.nombre.text = listas[indexPath.row]
          
           return cell
